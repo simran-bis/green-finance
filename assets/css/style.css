@@ -2113,7 +2113,27 @@ section {
 }
 
 #footer .footer-top .social-links a {
-    display: inline-block;
+    display: flex;
+    background: #333;
+    color: #eee;
+    line-height: 1;
+    margin-right: 4px;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.social-links a {
+    display: flex;
     background: #333;
     color: #eee;
     line-height: 1;
@@ -2132,7 +2152,17 @@ section {
     font-size: 16px;
 }
 
+.social-links a i {
+    line-height: 0;
+    font-size: 16px;
+}
+
 #footer .footer-top .social-links a:hover {
+    background: #18d26e;
+    color: #fff;
+}
+
+.social-links a:hover {
     background: #18d26e;
     color: #fff;
 }
